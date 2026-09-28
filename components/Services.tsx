@@ -80,19 +80,24 @@ export default function Services() {
           className="mx-auto max-w-3xl text-center"
         >
 
-          <span className="inline-block rounded-full bg-white px-4 py-2 font-medium text-brand-green-dark shadow-sm">
-            Our Services
-          </span>
+          <span className="inline-block rounded-full bg-white px-5 py-2 text-lg font-bold text-brand-green-dark shadow-sm">
+  Our Services
+</span>
 
-          <h2 className="mt-6 font-heading text-4xl font-bold leading-tight text-gray-900 lg:text-5xl">
-            Personalized Care That Supports Everyday Living
-          </h2>
+<h2 className="mt-6 font-heading text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
+  Personalized Care That Supports Everyday Living
+</h2>
 
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We provide compassionate, dependable, and personalized companion
-            care services designed to help seniors and adults maintain their
-            independence while enjoying a better quality of life.
-          </p>
+<div
+  className="section-heading-divider"
+  aria-hidden="true"
+/>
+
+<p className="mt-6 text-xl font-medium leading-relaxed text-gray-700">
+  We provide compassionate, dependable, and personalized companion
+  care services designed to help seniors and adults maintain their
+  independence while enjoying a better quality of life.
+</p>
 
         </motion.div>
 
@@ -134,29 +139,33 @@ export default function Services() {
 
                 {/* Title */}
 
-                <h3 className="mt-8 font-heading text-2xl font-semibold text-gray-900">
-                  {service.title}
-                </h3>
+                <h3 className="mt-8 font-heading text-3xl font-bold text-gray-900">
+  {service.title}
+</h3>
 
                 {/* Description */}
 
-                <p className="mt-4 leading-7 text-gray-600">
-                  {service.description}
-                </p>
+               <p className="mt-4 text-lg font-medium leading-relaxed text-gray-700">
+  {service.description}
+</p>
 
                 {/* Learn More */}
 
-                <button
-                  type="button"
-                  className="mt-8 inline-flex items-center gap-2 font-semibold text-brand-green transition group-hover:text-brand-green-dark"
-                >
-                  Learn More
-
-                  <ArrowRight
-                    size={18}
-                    className="transition group-hover:translate-x-2"
-                  />
-                </button>
+                <Link
+  href="/contact"
+  className="mt-8 inline-flex min-h-12 items-center gap-3 rounded-lg
+    font-bold text-brand-green-dark underline decoration-2
+    underline-offset-4 transition-colors
+    hover:text-brand-green focus-visible:outline
+    focus-visible:outline-2 focus-visible:outline-offset-4"
+>
+  Learn More
+  <ArrowRight
+    size={22}
+    aria-hidden="true"
+    className="transition-transform group-hover:translate-x-1"
+  />
+</Link>
 
               </motion.div>
             );
@@ -180,12 +189,13 @@ export default function Services() {
             Looking for Personalized Companion Care?
           </h3>
 
-          <p className="mx-auto mt-5 max-w-2xl text-brand-green-pale">
-            Our compassionate caregivers are ready to provide dependable
-            support tailored to your family's needs. Let's discuss how we can
-            help your loved one live comfortably and independently.
-          </p>
+          <p className="mx-auto mt-5 max-w-2xl text-lg font-medium leading-relaxed text-white">
+  Our compassionate caregivers are ready to provide dependable
+  support tailored to your family's needs. Let's discuss how we can
+  help your loved one live comfortably and independently.
+</p>
 
+        
           <div className="mt-10 flex flex-wrap justify-center gap-5">
 
             <Link

@@ -44,11 +44,11 @@ export default function Navbar() {
         initial={{ y: -80 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
-          scrolled
-            ? "bg-white py-3 shadow-lg"
-            : "bg-white/80 py-5 backdrop-blur-md"
-        }`}
+        className={`fixed left-0 top-0 z-50 w-full border-b transition-all duration-300 ${
+  scrolled
+    ? "border-gray-200/70 bg-white/95 py-3 shadow-sm backdrop-blur-md"
+    : "border-gray-200/50 bg-white/85 py-5 backdrop-blur-md"
+}`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
 
@@ -74,7 +74,7 @@ export default function Navbar() {
                 Bearing Bear
               </h2>
 
-              <p className="text-xs text-gray-500">
+              <p className="text-base font-semibold text-gray-600">
                 Companion Care
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="font-medium text-gray-700 transition-colors duration-300 hover:text-brand-green"
+                className="text-lg font-bold text-gray-800 transition-colors duration-300 hover:text-brand-green"
               >
                 {item.label}
               </Link>
@@ -100,7 +100,7 @@ export default function Navbar() {
 
             <a
               href="tel:+15616602005"
-              className="flex items-center gap-2 font-semibold text-brand-green-dark transition-colors hover:text-brand-green"
+              className="flex items-center gap-2 font-bold text-brand-green-dark transition-colors hover:text-brand-green"
             >
               <Phone size={18} />
               (561) 660-2005
@@ -123,7 +123,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="rounded-lg p-2 text-brand-green-dark transition-colors hover:bg-brand-green-pale lg:hidden"
+            className="text-lg font-bold text-gray-800 transition-colors hover:text-brand-green"
             aria-label={
               mobileOpen
                 ? "Close navigation menu"
@@ -182,7 +182,7 @@ export default function Navbar() {
 
               <a
                 href="tel:+15616602005"
-                className="flex items-center gap-2 font-semibold text-brand-green-dark"
+                className="flex items-center gap-2 font-bold text-brand-green-dark"
               >
                 <Phone size={18} />
                 (561) 660-4145
