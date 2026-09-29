@@ -15,36 +15,42 @@ import {
 const services = [
   {
     title: "Companion Care",
+    slug: "companion-care",
     description:
       "Friendly companionship, meaningful conversations, emotional support, and social engagement to reduce loneliness and improve well-being.",
     icon: HeartHandshake,
   },
   {
     title: "Homemaker Services",
+    slug: "homemaker-services",
     description:
       "Light housekeeping, laundry, organization, and maintaining a clean, safe, and comfortable living environment.",
     icon: Home,
   },
   {
     title: "Meal Preparation",
+       slug: "meal-preparation",
     description:
       "Nutritious meal planning and preparation based on dietary preferences and individual health needs.",
     icon: UtensilsCrossed,
   },
   {
     title: "Medication Reminders",
+    slug: "medication-reminders",
     description:
       "Helping clients stay on schedule with medication reminders and daily wellness routines.",
     icon: Pill,
   },
   {
     title: "Transportation Assistance",
+      slug: "transportation",
     description:
       "Safe transportation for appointments, grocery shopping, errands, and community outings.",
     icon: CarFront,
   },
   {
     title: "Personal Care Support",
+        slug: "personal-care",
     description:
       "Assistance with grooming, dressing, mobility, and other non-medical daily living activities.",
     icon: Sparkles,
@@ -151,13 +157,14 @@ export default function Services() {
 
                 {/* Learn More */}
 
-                <Link
-  href="/contact"
-  className="mt-8 inline-flex min-h-12 items-center gap-3 rounded-lg
-    font-bold text-brand-green-dark underline decoration-2
-    underline-offset-4 transition-colors
-    hover:text-brand-green focus-visible:outline
-    focus-visible:outline-2 focus-visible:outline-offset-4"
+          <Link
+  href={`/services/${service.slug}`}
+  className="mt-8 inline-flex min-h-12 items-center gap-3
+    text-lg font-bold text-brand-green-dark
+    underline decoration-2 underline-offset-4
+    transition-colors hover:text-brand-green
+    focus-visible:outline focus-visible:outline-2
+    focus-visible:outline-offset-4"
 >
   Learn More
   <ArrowRight
