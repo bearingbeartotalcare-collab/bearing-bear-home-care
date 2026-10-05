@@ -9,7 +9,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Bearing Bear Home Care",
+  title: "Bearing Bears Home Care",
   description:
     "Compassionate and dependable care for seniors and families.",
 };
@@ -20,19 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${nunito.variable} antialiased`}>
-        {children}
-      </body>
+    <html lang="en" className={nunito.variable}>
+      <body>{children}</body>
     </html>
   );
 }
-
-
-
-
-
-
-
-
-

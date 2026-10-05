@@ -71,7 +71,7 @@ export default function Navbar() {
 
             <div>
               <h2 className="font-heading text-xl font-bold text-brand-green-dark">
-                Bearing Bear
+                Bearing Bears
               </h2>
 
               <p className="text-base font-semibold text-gray-600">
