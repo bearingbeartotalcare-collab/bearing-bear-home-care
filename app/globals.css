@@ -5,7 +5,7 @@
 
 
 @font-face {
-  font-family: "Jasmine UPC";
+  font-family: "Jasmine UPC Regular";
   src: url("/fonts/JasmineUPC.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: "Jasmine UPC";
+  font-family: "Jasmine UPC Bold";
   src: url("/fonts/JasmineUPCBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
@@ -28,8 +28,13 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --font-sans: "Jasmine UPC", var(--font-nunito), sans-serif;
-  --font-heading: "Jasmine UPC", var(--font-nunito), sans-serif;
+  /*--font-sans: "Jasmine UPC", var(--font-nunito), sans-serif;
+  --font-heading: "Jasmine UPC", var(--font-nunito), sans-serif; */
+
+  --font-sans: "Jasmine UPC Regular", var(--font-nunito), sans-serif;
+  --font-heading: "Jasmine UPC Bold", sans-serif;
+
+
   --font-mono: var(--font-geist-mono);
 
   /* Bearing Bear brand colors */
@@ -224,13 +229,15 @@ html {
   html {
     scroll-behavior: smooth;
     font-size: 22.8px;
-    font-family: "Jasmine UPC", var(--font-nunito), sans-serif;
+    /*font-family: "Jasmine UPC", var(--font-nunito), sans-serif;*/
+   
   }
 
   body {
     @apply bg-background;
     color: var(--text-primary);
-    font-family: "Jasmine UPC", var(--font-nunito), sans-serif;
+    /*font-family: "Jasmine UPC", var(--font-nunito), sans-serif;*/
+     font-family: "Jasmine UPC Regular", var(--font-nunito), sans-serif;
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.65;
@@ -244,20 +251,41 @@ html {
   h4,
   h5,
   h6 {
-    text-shadow: 0.25px 0 0 currentColor;
-    
-  }
+     
+    font-family: "Jasmine UPC Bold", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #1d2921;
+  
+}
 
-   nav a,
+  /* nav a,
+button,
+label,
+.font-bold,
+.font-semibold {
+  font-family: "Jasmine UPC", sans-serif !important;
+  font-weight: 700 !important;
+}*/
+
+ nav a,
   button,
   label {
-    font-family: "Jasmine UPC", var(--font-nunito), system-ui, sans-serif;
+    font-family: "Jasmine UPC Bold", sans-serif;
     font-weight: 700;
   }
+
 
   p {
     line-height: 1.7;
   }
+
+  p,
+input,
+textarea,
+select {
+  font-weight: 400;
+}
 
   h1 {
   font-size: 2.5rem;
@@ -270,10 +298,6 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
-
-  p {
-    line-height: 1.7;
-  }
 
   a,
   button,

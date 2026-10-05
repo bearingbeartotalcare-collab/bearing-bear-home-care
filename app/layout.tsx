@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     "Compassionate and dependable care for seniors and families.",
 };
 
+
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +22,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={nunito.variable}>
-      <body>{children}</body>
+      <body className="font-sans">
+        {children}
+      </body>
     </html>
   );
 }
+
+
+/*
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={nunito.variable}>
+      <body className="font-bold">{children}</body>
+    </html>
+  );
+}
+  */
