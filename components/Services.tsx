@@ -99,7 +99,7 @@ export default function Services() {
   aria-hidden="true"
 />
 
-<p className="mt-6 text-xl font-medium leading-relaxed text-gray-700">
+<p className="mt-6 text-xl font-semibold leading-relaxed text-gray-700">
   We provide compassionate, dependable, and personalized companion
   care services designed to help seniors and adults maintain their
   independence while enjoying a better quality of life.

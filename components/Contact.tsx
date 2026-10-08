@@ -275,7 +275,7 @@ const router = useRouter();
                 Send Us a Message
               </h3>
 
-              <p className="mt-3 leading-7 text-gray-600">
+              <p className="mt-3 leading-7 font-semibold text-gray-600">
                 Tell us a little about what you need. Our team will be happy
                 to help.
               </p>
@@ -292,7 +292,7 @@ const router = useRouter();
               <div className="grid gap-6 md:grid-cols-2">
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-gray-700">
+                  <label className="mb-2 block text-sm font-semibold text-gray-700">
                     Full Name
                   </label>
 
@@ -310,7 +310,7 @@ const router = useRouter();
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-sm font-medium text-gray-700">
+                  <label className="mb-2 block text-sm font-semibold text-gray-700">
                     Phone Number
                   </label>
 
@@ -332,7 +332,7 @@ const router = useRouter();
               {/* Email */}
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-gray-700">
+                <label className="mb-2 block text-sm font-semibold text-gray-700">
                   Email Address
                 </label>
 
@@ -353,7 +353,7 @@ const router = useRouter();
               {/* Subject */}
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-gray-700">
+                <label className="mb-2 block text-sm font-semibold text-gray-700">
                   Subject
                 </label>
 
@@ -373,7 +373,7 @@ const router = useRouter();
               {/* Message */}
 
               <div>
-                <label className="mb-2 block text-sm font-medium text-gray-700">
+                <label className="mb-2 block text-sm font-semibold text-gray-700">
                   Message
                 </label>
 

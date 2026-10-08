@@ -65,7 +65,7 @@ export default function Footer() {
             <Link href="/" className="inline-block">
 
               <h2 className="font-heading text-3xl font-bold text-white">
-                Bearing Bear
+                Bearing Bears
               </h2>
 
               <p className="mt-1 text-sm font-semibold tracking-wide text-[#8bcf8f]">
@@ -92,7 +92,7 @@ export default function Footer() {
 
           <div>
 
-            <h3 className="font-heading text-2xl font-bold">
+            <h3 className="font-heading text-2xl font-bold text-white">
               Quick Links
             </h3>
 
@@ -131,7 +131,7 @@ export default function Footer() {
 
           <div>
 
-            <h3 className="font-heading text-2xl font-bold">
+            <h3 className="font-heading text-2xl font-bold text-white">
               Our Services
             </h3>
 
@@ -162,7 +162,7 @@ export default function Footer() {
 
           <div>
 
-            <h3 className="font-heading text-2xl font-bold">
+            <h3 className="font-heading text-2xl font-bold text-white">
               Contact Us
             </h3>
 
