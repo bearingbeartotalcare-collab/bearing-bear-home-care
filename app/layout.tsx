@@ -30,16 +30,3 @@ export default function RootLayout({
 }
 
 
-/*
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className={nunito.variable}>
-      <body className="font-bold">{children}</body>
-    </html>
-  );
-}
-  */

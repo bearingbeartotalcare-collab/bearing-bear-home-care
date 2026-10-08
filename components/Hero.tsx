@@ -151,7 +151,7 @@ export default function Hero() {
                 Our Services
               </h3>
 
-              <ul className="space-y-3 text-gray-600">
+              <ul className="space-y-3 text-gray-600 font-semibold">
                 <li>✓ Companion Care</li>
                 <li>✓ Meal Preparation</li>
                 <li>✓ Medication Reminders</li>

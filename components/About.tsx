@@ -97,7 +97,7 @@ export default function About() {
             {/* Section Label */}
 
             <span className="mb-5 inline-block rounded-full bg-brand-green-pale px-4 py-2 font-medium text-brand-green-dark">
-              About Bearing Bear
+              About Bearing Bears
             </span>
 
             {/* Heading */}
@@ -109,7 +109,7 @@ export default function About() {
             {/* Main Paragraph */}
 
             <p className="mt-8 text-lg leading-8 text-gray-600">
-              At <strong>Bearing Bear LLC</strong>, we believe exceptional care
+              At <strong>Bearing Bears LLC</strong>, we believe exceptional care
               begins with compassion. Our mission is to provide dependable,
               non-medical companion and homemaker services that improve quality
               of life while respecting each client's dignity, privacy, and
