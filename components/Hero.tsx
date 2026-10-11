@@ -63,11 +63,11 @@ export default function Hero() {
               </Link>
 
               <a
-                href="tel:+15616604145"
+                href="tel:+15616602005"
                 className="inline-flex items-center gap-2 rounded-xl border border-brand-green px-7 py-4 font-semibold text-brand-green transition hover:bg-brand-green-pale"
               >
                 <PhoneCall size={20} />
-                (561) 660-4145
+                (561) 660-2005
               </a>
             </div>
 
