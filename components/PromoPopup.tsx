@@ -46,30 +46,34 @@ export default function PromoPopup() {
       onClick={closePopup}
     >
       <div
-        role="dialog"
-        aria-modal="true"
-        aria-label="Bearing Bear promotional offer"
-        className="relative max-h-[92dvh] w-full max-w-3xl overflow-y-auto rounded-xl bg-white p-2 shadow-2xl sm:p-3"
-        onClick={(event) => event.stopPropagation()}
-      >
-        <button
-          type="button"
-          onClick={closePopup}
-          aria-label="Close promotional offer"
-          className="absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-gray-900 shadow-lg transition hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800"
-        >
-          <X size={26} />
-        </button>
+  role="dialog"
+  aria-modal="true"
+  aria-label="Bearing Bear promotional offer"
+  className="relative mx-auto max-h-[94dvh] w-fit max-w-[95vw] overflow-hidden rounded-xl bg-transparent p-0 shadow-2xl"
+  onClick={(event) => event.stopPropagation()}
+>
+  <button
+    type="button"
+    onClick={closePopup}
+    aria-label="Close promotional offer"
+    className="absolute right-2 top-2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-gray-900 shadow-lg transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-800"
+  >
+    <X size={24} />
+  </button>
 
-        <Image
-          src="/images/bearing-bear-promo.jpg"
-          alt="Bearing Bear LLC home maker and companion care services promotional flyer"
-          width={1200}
-          height={1600}
-          priority
-          className="mx-auto h-auto max-h-[84dvh] w-full rounded-lg object-contain"
-        />
-      </div>
+  <Image
+    src="/images/bearing-bear-promo.png"
+    alt="Bearing Bear LLC home maker and companion care services promotional flyer"
+    width={1024}
+    height={1536}
+    priority
+    className="block h-auto max-h-[94dvh] w-auto max-w-[95vw] rounded-xl object-contain"
+    sizes="95vw"
+  />
+</div>
+
+
+
     </div>
   );
 }
